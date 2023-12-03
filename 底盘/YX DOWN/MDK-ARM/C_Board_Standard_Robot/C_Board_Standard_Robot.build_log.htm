@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lll lll, lll, LIC=Z3C45-GYAPF-9YSVW-QRL77-PS149-MRYG4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\lsk\Desktop\gimbal\µ×ÅÌ\YX DOWN\MDK-ARM\C_Board_Standard_Robot.uvprojx
+Project File Date:  11/20/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'C_Board_Standard_Robot'
+compiling Gimbal_task.c...
+../Inc/drv_can.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/rc_potocal.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/chassis_task.h(30): warning:  #1295-D: Deprecated declaration mode_chooce - give arg types
+  void mode_chooce();
+../Inc/drv_can.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/exchange.h(1): warning:  #1295-D: Deprecated declaration exchange_task - give arg types
+  void exchange_task();
+..\RTOS TASK\Gimbal_task.c(23): warning:  #1295-D: Deprecated declaration Gimbal_loop_Init - give arg types
+  static void Gimbal_loop_Init();
+..\RTOS TASK\Gimbal_task.c(26): warning:  #1295-D: Deprecated declaration mode_select - give arg types
+  static void mode_select();
+..\RTOS TASK\Gimbal_task.c(29): warning:  #1295-D: Deprecated declaration gimbal_current_give - give arg types
+  static void gimbal_current_give();
+..\RTOS TASK\Gimbal_task.c(30): warning:  #1295-D: Deprecated declaration pitch_current_give - give arg types
+  	static void		pitch_current_give();
+..\RTOS TASK\Gimbal_task.c(39): warning:  #1295-D: Deprecated declaration gimbal_yaw_control - give arg types
+  static void gimbal_yaw_control();
+..\RTOS TASK\Gimbal_task.c(42): warning:  #1295-D: Deprecated declaration gimbal_pitch_control - give arg types
+  static void gimbal_pitch_control();
+..\RTOS TASK\Gimbal_task.c(203): warning:  #177-D: function "detel_calc2" was declared but never referenced
+  static void detel_calc2(fp32 *angle)
+..\RTOS TASK\Gimbal_task.c: 12 warnings, 0 errors
+compiling freertos.c...
+../Inc/drv_can.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/rc_potocal.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/chassis_task.h(30): warning:  #1295-D: Deprecated declaration mode_chooce - give arg types
+  void mode_chooce();
+../Inc/drv_can.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/exchange.h(1): warning:  #1295-D: Deprecated declaration exchange_task - give arg types
+  void exchange_task();
+../Inc/super_cap.h(1): warning:  #1-D: last line of file ends without a newline
+  void super_cap(void const * argument);
+../Inc/UI_task.h(336): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/freertos.c(189): warning:  #177-D: variable "TIM1_flag" was declared but never referenced
+  	uint8_t TIM1_flag = 1;//ï¿?ï¿?Öªï¿?ï¿?bug
+../Src/freertos.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=47940 RO-data=3704 RW-data=760 ZI-data=48000  
+FromELF: creating hex file...
+"C_Board_Standard_Robot\C_Board_Standard_Robot.axf" - 0 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM.CMSIS.4.5.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+   * Component: DSP Version: 1.4.6
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_C_Board_Standard_Robot
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: ARM::CMSIS:DSP:1.4.6
+      Include file:  CMSIS\Include\arm_math.h
+      Library file:  CMSIS\Lib\ARM\arm_cortexM4lf_math.lib
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
